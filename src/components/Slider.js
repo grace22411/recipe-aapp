@@ -1,36 +1,36 @@
 import React, { useState, useEffect } from "react";
-import "../styles/slider.css";
+import "../styles/slider.scss";
 
 const data = [
   {
-    title: "Hello World",
-    description: `non quos iste impedit ipsam quia, laudantium quam obcaecati amet ad labore natus magnam! Iusto.`,
+    title: "Larasta",
+    description: `20.44 min`,
     views: 3232,
-    imageUrl: "images/3.png",
+    imageUrl: "images/eating-greasy-food.jpeg",
   },
   {
-    title: "Hello World",
-    description: `non quos iste impedit ipsam quia, laudantium quam obcaecati amet ad labore natus magnam! Iusto.`,
+    title: "Hamburger",
+    description: `20.44 min`,
     views: 3232,
-    imageUrl: "images/3.png",
+    imageUrl: "images/eating-greasy-food.jpeg",
   },
   {
-    title: "Hello World",
-    description: `non quos iste impedit ipsam quia, laudantium quam obcaecati amet ad labore natus magnam! Iusto.`,
+    title: "Salad",
+    description: `20.44 min`,
     views: 3232,
-    imageUrl: "images/3.png",
+    imageUrl: "images/eating-greasy-food.jpeg",
   },
   {
-    title: "Hello World",
-    description: `non quos iste impedit ipsam quia, laudantium quam obcaecati amet ad labore natus magnam! Iusto.`,
+    title: "Stir Fried",
+    description: `20.44 min`,
     views: 3232,
-    imageUrl: "images/3.png",
+    imageUrl: "images/eating-greasy-food.jpeg",
   },
   {
-    title: "Hello World",
-    description: `non quos iste impedit ipsam quia, laudantium quam obcaecati amet ad labore natus magnam! Iusto.`,
+    title: "Egg Sauce",
+    description: `20.44 min`,
     views: 3232,
-    imageUrl: "images/3.png",
+    imageUrl: "images/eating-greasy-food.jpeg",
   },
 ];
 
@@ -38,11 +38,11 @@ export const Slider = () => {
   const Slide = () => {
     return data.map((data) => {
       return (
-        <div className="g-slide backgroundFix">
+        <div className="g-slide backgroundFix" style={{backgroundImage:`linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.85)),url(${data.imageUrl})`}}>
           <div>
             <h3>{data.title}</h3>
             <p>{data.description}</p>
-            <p>{data.views}</p>
+            <p>{data.views} views</p>
           </div>
         </div>
       );
