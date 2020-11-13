@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #329372;
+  --accent: #293823;
+  --paraColor: #333;
+  --ease: 0.5s all ease;
+}
+
+.backgroundFix {
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: var(--ease);
+}
+
+button {
+  transition: var(--ease);
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+  font-size: 12px;
+  /* background-color :  */
+  border-radius: 5px;
+  margin: 0px 20px;
+}
+.g-overlay {
+  position: absolute;
+}
+.g-rel {
+}
