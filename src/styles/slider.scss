@@ -7,11 +7,14 @@
 .g-slides-wrapper::-webkit-scrollbar {
   display: none;
 }
+.g-slides-container{
+  padding-right: 0;
+}
 .g-slides-wrapper .g-slide {
   display: inline-block;
   white-space: normal;
-  margin-right: 20px;
-  width: 85%;
+  margin-right: 15px;
+  width: 88%;
   height: 155px;
   padding: 15px;
   border-radius: 20px;

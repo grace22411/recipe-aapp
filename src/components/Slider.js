@@ -50,7 +50,7 @@ export const Slider = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container g-slides-container">
       <div className="g-slides-wrapper">
         <Slide />
       </div>
