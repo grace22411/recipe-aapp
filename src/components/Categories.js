@@ -23,13 +23,13 @@ const categoriesData = [
 
 const categoriesUi = ({ name, icon }, color) => {
   return (
-    <div className="centered">
+    <div key={Math.random()} className="centered">
       <div>
         <div
           style={{ backgroundColor: colors[color] }}
           className="categorie centered"
         >
-          <i className={`fa ${icon}`}></i>
+          <i className={`fa ${icon} iconColor`}></i>
         </div>
         <p>{name}</p>
       </div>

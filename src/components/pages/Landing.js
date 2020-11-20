@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "../Header";
 import { Slider } from "../Slider";
 import Categories from "../Categories";
+import Recent from "../Recent";
 
 const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ const LandingPage = () => {
       <Header />
       <Slider />
       <Categories />
+      <Recent />
     </div>
   );
 };
