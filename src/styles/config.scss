@@ -1,0 +1,25 @@
+$primaryColor: #272727;
+$secondaryColor: #272727;
+$accentColor: #091d22;
+$ease: 0.4s all ease;
+
+$colors: (
+  "primaryLight": #312b23,
+  "primaryDark": whitesmoke,
+  "fadeLight": rgba(0, 0, 0, 0.1),
+  "fadeDark": rgba(255, 255, 255, 0.2),
+  "colorLight": rgb(209, 202, 202),
+  "colorDark": #000,
+  "backgroundDark": #010101,
+);
+
+@function setColor($color) {
+  @return map-get($colors, $color);
+}
+
+@mixin darkTheme($dark: true) {
+  @if $dark {
+    background-color: setColor(backgroundDark);
+    color: setColor(colorLight);
+  }
+}

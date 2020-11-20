@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styles/slider.scss";
+import "../styles/all.scss";
 
 const data = [
   {
@@ -38,7 +38,12 @@ export const Slider = () => {
   const Slide = () => {
     return data.map((data) => {
       return (
-        <div className="g-slide backgroundFix" style={{backgroundImage:`linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.85)),url(${data.imageUrl})`}}>
+        <div
+          className="g-slide backgroundFix"
+          style={{
+            backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.85)),url(${data.imageUrl})`,
+          }}
+        >
           <div>
             <h3>{data.title}</h3>
             <p>{data.description}</p>
@@ -50,7 +55,8 @@ export const Slider = () => {
   };
 
   return (
-    <div className="container g-slides-container">
+    <div className="g-slides-container">
+      <h4 className="titleHeader">Trending</h4>
       <div className="g-slides-wrapper">
         <Slide />
       </div>

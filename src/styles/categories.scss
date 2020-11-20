@@ -1,0 +1,15 @@
+.categoriesList {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  & p {
+    font-size: 12px;
+    margin: 5px auto;
+  }
+  & .categorie {
+    padding: 17px 15px;
+    background-color: pink;
+    border-radius: 40%;
+    margin: 0px 10px;
+  }
+}

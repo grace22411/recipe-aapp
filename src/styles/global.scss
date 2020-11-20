@@ -2,17 +2,15 @@
   box-sizing: border-box;
 }
 
-:root {
-  --primary: #329372;
-  --accent: #293823;
-  --paraColor: #333;
-  --ease: 0.5s all ease;
-}
-
 .backgroundFix {
   background-size: center;
   background-repeat: no-repeat;
   background-position: center;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+  align-self: center;
 }
 
 ul {
@@ -40,5 +38,12 @@ button {
 .g-overlay {
   position: absolute;
 }
-.g-rel {
+
+.titleHeader {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.theme {
+  @include darkTheme(true);
 }
